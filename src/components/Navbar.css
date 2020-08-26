@@ -3,5 +3,29 @@
     width: 100%;
     background-color: rgb(52, 58, 64);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box
+}
+
+.app-name {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.navbar-button {
+    border: none;
+    background: transparent;
+    font-family: sans-serif;
+    font-size: 15px; 
+    color: white;
+    outline: none; 
     
+}
+
+.navbar-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
