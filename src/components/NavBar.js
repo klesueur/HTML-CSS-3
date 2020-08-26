@@ -22,9 +22,11 @@ export default class NavBar extends Component {
         return (
             <div>
                 <div className='navbar'>
+
                     <h1 className='app-name'> NavBar </h1>
 
-                    <div className='navbar-icon' onClick={this.handleSlide}> &#9776; </div>
+                    <div className='navbar-icon' onClick={this.handleSlide}> 
+                    &#9776; </div>
                     <div className='navbar-button-container'>
                         <button className='navbar-button'> Home </button>
                         <button className='navbar-button'> About </button>

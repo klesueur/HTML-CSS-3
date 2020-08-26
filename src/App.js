@@ -15,7 +15,7 @@ export default class App extends Component {
 
     handleSpin () {
       this.setState({
-        spin: !this.state.spinning
+        spinning: !this.state.spinning
       })
     }
 
@@ -25,9 +25,9 @@ export default class App extends Component {
     return(
       <div>
         <NavBar /> 
-        <div className='square' onClick={() => this.handleSpin()}></div>
+        <div className={this.state.spinning ? 'spinning-square' : 'square'} onClick={this.handleSpin}></div>
+        <div className='square-circle'></div>
         <div className='heart'></div>
-        <div className='square-click'></div>
       </div>
     )
   }
